@@ -1,0 +1,95 @@
+{
+    "projects": [
+        {
+            "key": "3d object reconstruction",
+            "name": "3D Object Reconstruction",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["opencv", "matlab"]
+        },
+        {
+            "key": "adaptive background subtraction",
+            "name": "Adaptive Background Subtraction",
+            "media": ["gmm"],
+            "description": "Ad ea officia mollit sunt. Amet Lorem occaecat veniam ipsum consectetur sint non ullamco adipisicing. Enim aliquip minim est in quis commodo laboris esse dolor. Ipsum aliqua elit commodo proident irure culpa non est eu proident exercitation aute consectetur ipsum. Nisi commodo dolore mollit in esse id esse pariatur labore ad. Ea aliqua sint sit fugiat minim.",
+            "icons": ["python", "opencv", "anaconda"]
+        },
+        {
+            "key": "2-wat set associative cache controller on fpga",
+            "name": "2-Way Set Associative Cache Controller on FPGA",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["vivado", "xilinx", "fpga", "verilog"]
+        },
+        {
+            "key": "clinic website",
+            "name": "Clinic website",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["html5", "css3", "javascript", "nodedotjs", "heroku", "figma", "express"]
+        },
+        {
+            "key": "error modeling for image processing filters accelerated onto sran-based fpgas",
+            "name": "Error Modeling for Image Processing Filters accelerated onto SRAM-based FPGAs",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["cplusplus", "python", "fpga", "vivado", "hls"]
+        },
+        {
+            "key": "euridit italia",
+            "name": "Euridit Italia",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["html5", "css3", "javascript", "php"]
+        },
+        {
+            "key": "fault injector implementation on fpga",
+            "name": "Fault injector implementation on FPGA",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["c", "hls", "vivado", "fpga", "xilinx", "vhdl"]
+        },
+        {
+            "key": "generative adversarial network",
+            "name": "Generative Adversarial Network",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["python", "tensorflow", "pytorch"]
+        },
+        {
+            "key": "igoup",
+            "name": "iGoUp",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["python", "selenium", "pycharm"]
+        },
+        {
+            "key": "lorenzo il magnifico",
+            "name": "Lorenzo il Magnifico",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["eclipseide", "java", "xml", "swing"]
+        },
+        {
+            "key": "nessie 2013",
+            "name": "Nessie 2013",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["eagle", "vivado", "xilinx", "cplusplus", "fpga", "arm"]
+        },
+        {
+            "key": "object tracker",
+            "name": "Object Tracker",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["vivado", "xilinx", "cplusplus", "fpga", "arm"]
+        },
+        {
+            "key": "usability-based cross-layer reliability evaluation of image processing applications",
+            "name": "Usability-based Cross-Layer Reliability Evaluation of Image Processing Applications",
+            "media": ["gmm"],
+            "description": "...",
+            "icons": ["python", "opencv", "cplusplus", "keras", "arm", "llvm"]
+        }
+    ]
+}
