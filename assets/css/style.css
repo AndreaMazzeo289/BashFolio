@@ -193,7 +193,6 @@ input:focus
 .project-container {
     display: flex;
     flex-direction: column;
-    border-color: #149bda;
     width: 100%;
 }
 .project-container h1 {
@@ -226,6 +225,7 @@ input:focus
 }
 .project-container .icons-container img {
     width: 100%;
+    border-radius: 0;
 }
 
 /**************************************************************
