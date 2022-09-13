@@ -19,19 +19,19 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="bash">
-      <div class="window-controls">
-        <div class="button red"></div>
-        <div class="button yellow"></div>
-        <div class="button green"></div>  
-        <div class="title">
-          <a href="https://github.com/AndreaMazzeo289" target="_blank" rel="noopener"><i class='fab fa-github'></i> github.com/AndreaMazzeo289</a>
-        </div>
+  <div id="bash">
+    <div class="window-header">
+      <div class="buttons-container">
+        <div style="background-color: var(--color-red)" class="button"></div>
+        <div style="background-color: var(--color-yellow)" class="button"></div>
+        <div style="background-color: var(--color-green)" class="button"></div>
       </div>
-      <div id="bash-content">
-        <!-- Here the text is placed dynamically by main.js -->
+      <div class="title">
+        <a href="https://github.com/AndreaMazzeo289" target="_blank" rel="noopener"><h1><i class='fab fa-github'></i> github.com/AndreaMazzeo289</h1></a>
       </div>
+    </div>
+    <div id="bash-content">
+      <!-- Here the text is placed dynamically by main.js -->
     </div>
   </div>
 
@@ -43,12 +43,14 @@
   </div>
   -->
 
+  <!--
   <div class="footer">
     <p>
       Coded with <span id="coded-with"> &hearts; </span> by
       <a target="_blank" rel="noopener" class="credits" href="https://github.com/AndreaMazzeo289">@AndreaMazzeo289</a>
     </p>
   </div>
+  -->
 
   <script type="module" src="./assets/js/main.js"></script>
 </body>
