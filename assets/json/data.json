@@ -31,44 +31,44 @@
         "3d object reconstruction" : {
             "name": "3D Object Reconstruction",
             "media": "3dReconstruction",
-            "description": "...",
+            "description": "The project was a part of \"computer vision and image analysis\" course attended during my studies in master degree. The homework has the role to pratically test what studied during the theory course. From a single image representing a car taken by side, the role is to extract as more information as possibile, such as the size of car components, the extrinsic/intrisic camera parameters and the 3d reconstruction of the hidden wheels.",
             "icons": ["opencv", "matlab"]
         },
         "4-way set associative cache controller": {
             "name": "4-Way Set Associative Cache Controller",
             "media": "cache",
-            "description": "...",
+            "description": "The project was a part of \"embedded systems\" course attended during my studies in master degree. The project focused on the design of cache controller suited for an FPGA. Since the FPGA has lower clock ratio compared to standard CPUs, all the cache operations has been designed to be completed in the minor as possible number of clock cycles. The chosen board was the Nexys 4, which mounts an Artix-7 FPGA. The hardware definition language used to implement the cache controller is Verilog.",
             "icons": ["vivado", "xilinx"]
         },
         "igoup": {
             "name": "iGoUp",
             "media": "igoup",
-            "description": "Cupidatat velit consequat esse aute laboris aliqua proident Lorem proident dolore velit tempor sit commodo.",
+            "description": "iGoUp is an application which provides a set of tools to easily manage an Instagram profile. The main goal of iGoUp is to make your profile more attractive, helping you to make interaction and increase the follower number. The application runs on a server and it's enterely implemented in python. To automatize some actions has been used the Selenium library.",
             "icons": ["python", "selenium", "pycharm"]
         },
         "euridit italia": {
             "name": "Euridit Italia",
             "media": "euridit",
-            "description": "...",
+            "description": "This is a simple website developed for the italian \"Euridit Italia\" company aiming to present their services.",
             "icons": ["html5", "css3", "javascript", "php"]
         },
         "lorenzo il magnifico": {
             "name": "Lorenzo il Magnifico",
             "media": "lorenzo",
-            "description": "...",
+            "description": "This project has been developed as final project of bachelor degree. Lorenzo il Magnifico is a multiplayer online games entirely developed in Java.",
             "icons": ["eclipseide", "java"]
         },
         "object tracker robot": {
             "name": "Object Tracker Robot",
             "media": "pixy",
-            "description": "...",
+            "description": "This has been the final project of high school. The goal was to implement a robot able to follow a moving object, like a ball. The core of the robot is a ZedBoard Zynq-7000 FPGA, which combines the power of reconfigurable hardware and a dual core Arm Cortex-A9. On the FPGA all the low-level driver to control the sensor has been written, the logic has been demanded on the CPU. The computer vision goal is affidated to the Pixy CMUCam5, an artificial vision sensor based on CCD technology.",
             "icons": ["vivado", "xilinx", "cplusplus", "arm"]
         },
         "nessie 2013": {
             "name": "Nessie 2013",
             "media": "nessie",
-            "description": "...",
-            "icons": ["vivado", "xilinx", "cplusplus", "arm"]
+            "description": "Implementation of a FPGA based robot suited for the Robocup Jr competition. The robot has the goal to follow a path avoiding some obstacles, find a victim and place it in the safe zone. Thus, it can interact with the environment thorugh a set of sensors (IR, UR, gyroscope and color) controlled by the core: The TE0300 FPGA Modules with Xilinx Spartan-3E. Onto the FPGA both driver of sensors and microblaze have been implemented. This projects lasted almost 2 years, starting from a sketch on paper choosing which the hardware to use, designing the PCB for interfacing the sensor with the main board, writing both the low-level and high-level code.",
+            "icons": ["vivado", "xilinx", "cplusplus"]
         }
     },
     "papers":
