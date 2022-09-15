@@ -11,7 +11,11 @@
     --font-size-small: 1.5rem;
   
     --light-blue: #149bda;
-    --dark-blue: #011627;
+
+    /*--dark-blue: #011627;*/
+    /*--dark-blue: #2E3440;*/
+    --dark-blue: #202124;
+
     --dark-yellow: #eea406;
     --dark-red: #f5084f;
     --light-green: #5AD786;
@@ -57,10 +61,11 @@ body {
     overflow: hidden;
     -ms-overflow-style: none;
 
-    border: 2px solid var(--purple);
     border-radius: 10px;
-    border: .5rem solid var(--dark-blue);
-    box-shadow: 0 0 10px 7px rgba(255, 255, 255, .1);
+    
+    /*box-shadow: 0 0 10px 7px rgba(255, 255, 255, .1);*/
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .1);
+
     padding: 1rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
