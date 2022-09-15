@@ -1,11 +1,14 @@
+/**************************************************************
+    GENERAL
+**************************************************************/
 :root {
     font-size: 62.5%; /* Root font size 10px */
     font-family: "Cascadia Mono", sans-serif;
-  
-    --font-size-window-title: 1.8rem; /* 18px */
-    --font-size-terminal: 1.5rem; /* 14px */
 
-    --font-regular: 400;
+    --font-size-large: 2.5rem;
+    --font-size-big: 2rem;
+    --font-size-regular: 1.7rem;
+    --font-size-small: 1.5rem;
   
     --color-dark-blue: #011627;
     --color-red: #F5544D;
@@ -20,6 +23,7 @@
     --dark-red: #f5084f;
     --light-green: #5AD786;
     --light-yellow: #F7FCA0;
+    --dirty-white: #CCCCCC;
 }
 
 ::-webkit-scrollbar {
@@ -35,9 +39,8 @@ body {
     background-color: var(--color-dark-blue);
 
     font-family: "Cascadia Mono", sans-serif;
-    font-size: var(--font-size-terminal);
-    font-weight: var(--font-regular);
-    letter-spacing: 2px;
+    font-size: var(--font-size-regular);
+    letter-spacing: 1px;
 
     display:flex;
     align-items: center;
@@ -49,7 +52,7 @@ body {
 #bash {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     height: 500px;
     cursor: text;
@@ -63,9 +66,32 @@ body {
     box-shadow: 0 0 10px 7px rgba(255, 255, 255, .1);
     padding: 1rem;
     padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    margin: 3rem;
 
     color: var(--light-yellow);   
 }
+
+.lightblue-text {
+    color: var(--light-blue);
+}
+.darkred-text {
+    color: var(--dark-red);
+}
+.darkyellow-text {
+    color: var(--dark-yellow);
+}
+.lightgreen-text {
+    color: var(--light-green);
+}
+.lightyellow-text {
+    color: var(--light-yellow);
+}
+
+/**************************************************************
+    BASH HEADER
+**************************************************************/
 #bash .window-header {
     display:flex;
     align-items: center;
@@ -94,25 +120,13 @@ body {
     text-align: center;
 }
 #bash .window-header .title h1 {
-    color: white;
-    font-size: var(--font-size-terminal);
+    color: var(--dirty-white);
+    font-size: var(--font-size-big);
 }
 
-@media (max-width:500px)
-{
-    #bash .window-header .buttons-container {
-        position: unset;
-        display: flex;
-        flex-direction: row;
-    }
-}
-@media (max-width:400px)
-{
-    #bash .window-header .title h1 {
-        display: none;   
-    }
-}
-
+/**************************************************************
+    BASH CONTENT
+**************************************************************/
 #bash-content {
     display:flex;
     flex-direction: column;
@@ -121,49 +135,22 @@ body {
     padding:8px;
     overflow: auto;
 }
-
-
-
-.arrow {
-    color: #64f105
-}
-
-.arrow-error {
-    color: #f5084f
-}
-
-.lightblue-text {
-    color: var(--light-blue);
-}
-.darkred-text {
-    color: var(--dark-red);
-}
-.darkyellow-text {
-    color: var(--dark-yellow);
-}
-.lightgreen-text {
-    color: var(--light-green);
-}
-
-
-
 input{
     border:none;
     background-color: unset;
     color: var(--light-blue);
     width: 100%;
-    font-size: 16px;
-    font-family: 'Fira Code', monospace;
+    font-size: var(--font-size-regular);
     padding-left: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    height: 20px;
+    font-family: "Cascadia Mono", sans-serif;
 }
 .input-value {
     color: var(--light-blue);
     padding-left: 10px;
-    font-family: 'Fira Code', monospace;
-    font-size: 16px;
+    /*font-size: var(--font-size-regular);*/
 }
-
 input:focus
 {
     border:none;
@@ -173,23 +160,14 @@ input:focus
 }
 
 .line-heading{
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  padding:8px 0;
+  padding: 8px 0;
 }
 
 .arrow-icon {
     padding-right: 10px;
-}
-.icon-ok {
-    color: var(--light-green);
-}
-.icon-error {
-    color: var(--dark-red);
-}
-.icon-list {
-    color: var(--light-yellow);
 }
 .list-item {
     padding-left: 20px;
@@ -197,32 +175,38 @@ input:focus
 .list-item a {
     text-decoration: none;
 }
-
 .social-link {
     text-decoration: none;
-    color: white;
+    color: var(--dirty-white);
 }
 
-
+/**************************************************************
+    PROJECTS
+**************************************************************/
 .project-container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+.project-container p {
+    margin: 0;
+}
 .project-container h1 {
     color: yellow;
-    font-size: 25px;
+    font-size: var(--font-size-large);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 .project-container img {
     margin: 0 auto;
     width: 40%;
     border-radius: 10px;
 }
-.project-container p {
-    font-size: var(--font-size-terminal);
-}
 .project-container h2 {
-    font-size: 16px;
+    margin-top: 3rem;
+    font-size: var(--font-size-big);
+    color: var(--dark-yellow);
 }
 .project-container .icons-container {
     display: flex;
@@ -245,44 +229,55 @@ input:focus
 /**************************************************************
     FOOTER
 **************************************************************/
-
 .footer {
-    color: #fec303;
+    position:absolute;
+    bottom:0;
+    right:0;
+    color: var(--dark-yellow);
     text-align: center;
-    float: right;
-    margin-top: -50px;
-    font-size: 12px;
-    font-weight: 200;
-    letter-spacing: .1em;
-    margin-right: 25px
+    margin-right: 3rem;
 }
 
-.footer-on-exit {
-    font-size: 15px;
-    text-align: center;
-    left: 30%;
-    right: 30%
-}
-
-#coded-with {
-    font-size: var(--font-size-window-title);
-    color: var(--color-red-heart);
+#heart {
+    color: var(--dark-red);
 }
 
 .credits {
     font-weight: 300;
     text-align: center;
-    color: aqua;
+    color: var(--light-green);
     text-decoration: none;
 }
 
-/*
-@media only screen and (min-width: 768px)
+/**************************************************************
+    MEDIA QUERIES
+**************************************************************/
+@media (max-width:600px)
 {
+    body {
+        font-size: var(--font-size-small);
+    }
     #bash {
-        height: 550px;
-        width: 100%;
-        max-width: 900px;
+        width: 80%;
+    }
+    #bash .window-header .buttons-container {
+        position: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    #bash .window-header .title h1 {
+        font-size: var(--font-size-small);
+    }
+    input {
+        font-size: var(--font-size-small);
+    }
+    .project-container img {
+        width: 60%;
     }
 }
-*/
+@media (max-width:500px)
+{
+    #bash .window-header .title h1 {
+        display: none;   
+    }
+}
