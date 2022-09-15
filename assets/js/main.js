@@ -268,6 +268,7 @@ function showProjectInfo(data)
     const icon = document.createElement("img");
     const iconSource = "./assets/img/tech/" + data.icons[el] + ".svg";
     icon.setAttribute("src", iconSource);
+    const iconOverlay = document.createElement("div");
     span.appendChild(icon);
     divIcons.appendChild(span);
   }

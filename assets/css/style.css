@@ -10,33 +10,30 @@
     --font-size-regular: 1.7rem;
     --font-size-small: 1.5rem;
   
-    --color-dark-blue: #011627;
-    --color-red: #F5544D;
-    --color-yellow: #FABD2F;
-    --color-green: #47D043;
-    --color-red-heart: #f5084f;
-    --color-purple: #7508db;
-
     --light-blue: #149bda;
-    --dark-blue: #6875d8;
+    --dark-blue: #011627;
     --dark-yellow: #eea406;
     --dark-red: #f5084f;
     --light-green: #5AD786;
     --light-yellow: #F7FCA0;
     --dirty-white: #CCCCCC;
+    --purple: #7508db;
 }
 
 ::-webkit-scrollbar {
     display: none
 }
-
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 a {
     text-decoration: none;
 }
 
 body {
     margin: 0 10px;
-    background-color: var(--color-dark-blue);
+    background-color: var(--dark-blue);
 
     font-family: "Cascadia Mono", sans-serif;
     font-size: var(--font-size-regular);
@@ -60,9 +57,9 @@ body {
     overflow: hidden;
     -ms-overflow-style: none;
 
-    border: 2px solid var(--color-purple);
+    border: 2px solid var(--purple);
     border-radius: 10px;
-    border: .5rem solid var(--color-dark-blue);
+    border: .5rem solid var(--dark-blue);
     box-shadow: 0 0 10px 7px rgba(255, 255, 255, .1);
     padding: 1rem;
     padding-left: 2.5rem;
