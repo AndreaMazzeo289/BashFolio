@@ -170,7 +170,7 @@ function getLineHeading(newCommand = true, error = false)
   // >
   const i = document.createElement("i");
   let arrowStyle = "fas fa-angle-right arrow-icon ";
-  arrowStyle += error ? "icon-error" : "icon-ok";
+  arrowStyle += error ? "darkred-text" : "lightgreen-text";
   i.setAttribute("class", arrowStyle);
   div.appendChild(i);
 
@@ -180,10 +180,10 @@ function getLineHeading(newCommand = true, error = false)
   rootSpan.textContent = "root";
   div.appendChild(rootSpan);
 
-  // @AndreaMazzeo289 $
+  // @am289 $
   const nameSpan = document.createElement("span");
   nameSpan.setAttribute("class", "darkyellow-text");
-  nameSpan.textContent = "@AndreaMazzeo289 $";
+  nameSpan.textContent = "@am289 $";
   div.appendChild(nameSpan);
 
   return div;
@@ -208,7 +208,7 @@ function printListItem(text, colorClass)
   div.setAttribute("class", "list-item");
 
   const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right arrow-icon icon-list");
+  i.setAttribute("class", "fas fa-angle-right arrow-icon lightyellow-text");
   div.appendChild(i);
 
   const anchor = document.createElement("a");
