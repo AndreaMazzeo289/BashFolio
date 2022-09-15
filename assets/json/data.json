@@ -17,15 +17,15 @@
             "icons": ["python", "tensorflow", "pytorch"]
         },
         "fault injector for fpga": {
-            "name": "Fault injector for FPGA",
+            "name": "Fault Injector for FPGA",
             "media": "fault",
-            "description": "...",
+            "description": "This is an implementation of a fault injector framework designed for FPGA. The role of fault injector is to test an application which runs on the FPGA and analyze how it works in presence of hardware faults. ",
             "icons": ["c", "vivado", "xilinx", "arm"]
         },
         "adaptive gaussian mixture model": {
             "name": "Adaptive Gaussian Mixture Model",
             "media": "gmm",
-            "description": "Ad ea officia mollit sunt. Amet Lorem occaecat veniam ipsum consectetur sint non ullamco adipisicing. Enim aliquip minim est in quis commodo laboris esse dolor. Ipsum aliqua elit commodo proident irure culpa non est eu proident exercitation aute consectetur ipsum. Nisi commodo dolore mollit in esse id esse pariatur labore ad. Ea aliqua sint sit fugiat minim.",
+            "description": "The project was a part of \"computer vision and image analysis\" course attended during my studies in master degree. The goals is to implement a background subtraction algorithm applied to highway webcam videos. The algorithm should be able to quickly adapt to the environment, like weather and light conditions. The starting algorithm is the gaussian mixture model, upon this one another model has been built. The resulting algorithm is able to have an accurate background subtraction when the light conditions are stable, while during sunrise and sunset (when the light will change faster) the learning curve is higher.",
             "icons": ["python", "opencv", "anaconda"]
         },
         "3d object reconstruction" : {
