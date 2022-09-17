@@ -247,7 +247,7 @@ function showProjectInfo(data)
   h1.textContent = data.name;
 
   const img = document.createElement("img");
-  const imgSource = "./assets/img/projects/" + data.media + ".png";
+  const imgSource = "./assets/img/projects/" + data.media + ".jpg";
   img.setAttribute("src", imgSource);
 
   const overviewH2 = document.createElement("h2");
@@ -297,9 +297,22 @@ function showPublicationInfo(data)
   const abstract = document.createElement("p");
   abstract.innerText = data.abstract;
 
+  const linkContainer = document.createElement("div");
+  linkContainer.setAttribute("class", "icons-container");
+
+  const link = document.createElement("a");
+  link.setAttribute("href", data.url);
+  linkContainer.appendChild(link);
+  
+  const svg = document.createElement("img");
+  svg.setAttribute("src", "./assets/img/tech/link.svg");
+  svg.setAttribute("id", "svg-url")
+  link.appendChild(svg);
+
   div.appendChild(h1);
   div.appendChild(published);
   div.appendChild(abstract);
+  div.appendChild(link);
   bashContent.appendChild(div);
 }
 

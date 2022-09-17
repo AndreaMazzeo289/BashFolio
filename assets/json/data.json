@@ -12,62 +12,62 @@
     {
         "error modelling by generative adversarial network": {
             "name": "Error modelling by Generative Adversarial Network",
-            "media": "gmm",
-            "description": "...",
+            "media": "gan",
+            "description": "This project was one of my Ph.D. projects. Its goal is to create a model that can automatically generate faulted images such as they are got by a fault injection campaign. I started to build my own model from the Pix2Pix GAN (taken from \"Image-to-Image Translation with GAN\"). During the early stages of training, it was evident that the model chosen with the dataset considered suffered from a vanishing gradient. Therefore, the model was transformed into a Wasserstein-GAN, making the training more effective and the generated images more accurate.",
             "icons": ["python", "tensorflow", "pytorch"]
         },
         "fault injector for fpga": {
             "name": "Fault Injector for FPGA",
             "media": "fault",
-            "description": "This is an implementation of a fault injector framework designed for FPGA. The role of fault injector is to test an application which runs on the FPGA and analyze how it works in presence of hardware faults. ",
+            "description": "Implementation of a fault injection platform on FPGA. A fault injector is intended to test an application (implemented on FPGA in this case) when it impacts hardware errors. Image processing applications, which are often used in critical environments such as satellites and autonomous driving, were chosen. The fault injector was applied on three different boards: the Zedboard, Zybo, and VC707.",
             "icons": ["c", "vivado", "xilinx", "arm"]
         },
         "adaptive gaussian mixture model": {
             "name": "Adaptive Gaussian Mixture Model",
             "media": "gmm",
-            "description": "The project was a part of \"computer vision and image analysis\" course attended during my studies in master degree. The goals is to implement a background subtraction algorithm applied to highway webcam videos. The algorithm should be able to quickly adapt to the environment, like weather and light conditions. The starting algorithm is the gaussian mixture model, upon this one another model has been built. The resulting algorithm is able to have an accurate background subtraction when the light conditions are stable, while during sunrise and sunset (when the light will change faster) the learning curve is higher.",
+            "description": "The project was a part of the \"computer vision and image analysis\" course attended during my master's degree. The goal is to implement a background subtraction algorithm applied to highway webcam videos. The algorithm should be able to quickly adapt to the environment, like weather and light conditions. The starting algorithm is the gaussian mixture model, upon this one another model has been built. The resulting algorithm can have an accurate background subtraction when the light conditions are stable, while during sunrise and sunset (when the light will change faster) the learning curve is higher.",
             "icons": ["python", "opencv", "anaconda"]
         },
         "3d object reconstruction" : {
             "name": "3D Object Reconstruction",
             "media": "3dReconstruction",
-            "description": "The project was a part of \"computer vision and image analysis\" course attended during my studies in master degree. The homework has the role to pratically test what studied during the theory course. From a single image representing a car taken by side, the role is to extract as more information as possibile, such as the size of car components, the extrinsic/intrisic camera parameters and the 3d reconstruction of the hidden wheels.",
+            "description": "The project was a part of the \"computer vision and image analysis\" course attended during my master's degree. The assignment has the role of practically testing what was studied in the theory course. From a single image representing a car taken by side, the role is to extract as much information as possible, such as the size of car components, both extrinsic and intrinsic camera parameters, and the 3D reconstruction of the hidden wheels.",
             "icons": ["opencv", "matlab"]
         },
         "4-way set associative cache controller": {
             "name": "4-Way Set Associative Cache Controller",
             "media": "cache",
-            "description": "The project was a part of \"embedded systems\" course attended during my studies in master degree. The project focused on the design of cache controller suited for an FPGA. Since the FPGA has lower clock ratio compared to standard CPUs, all the cache operations has been designed to be completed in the minor as possible number of clock cycles. The chosen board was the Nexys 4, which mounts an Artix-7 FPGA. The hardware definition language used to implement the cache controller is Verilog.",
+            "description": "The project was a part of the \"embedded systems\" course attended during my studies for my master's degree. The project focused on the design of a cache controller fitted for an FPGA. Since the FPGA has a lower clock frequency compared to standard CPUs, all the cache operations have been designed to be completed in the smallest possible number of clock cycles. The chosen board is the Nexys 4, which mounts an Artix-7 FPGA. The hardware definition language used to implement the cache controller is Verilog.",
             "icons": ["vivado", "xilinx"]
         },
         "igoup": {
             "name": "iGoUp",
             "media": "igoup",
-            "description": "iGoUp is an application which provides a set of tools to easily manage an Instagram profile. The main goal of iGoUp is to make your profile more attractive, helping you to make interaction and increase the follower number. The application runs on a server and it's enterely implemented in python. To automatize some actions has been used the Selenium library.",
+            "description": "iGoUp is an application that provides a set of tools that help you easily manage your Instagram profile. The main goal of iGoUp is to make the profile more \"live\", helping you to make interactions and increase the follower number. The application runs on a server and it's entirely implemented in python. To automatize some actions has been used the Selenium library.",
             "icons": ["python", "selenium", "pycharm"]
         },
         "euridit italia": {
             "name": "Euridit Italia",
             "media": "euridit",
-            "description": "This is a simple website developed for the italian \"Euridit Italia\" company aiming to present their services.",
+            "description": "This is a website developed for the Italian \"Euridit Italia\" company aiming to present their services to potential customers.",
             "icons": ["html5", "css3", "javascript", "php"]
         },
         "lorenzo il magnifico": {
             "name": "Lorenzo il Magnifico",
             "media": "lorenzo",
-            "description": "This project has been developed as final project of bachelor degree. Lorenzo il Magnifico is a multiplayer online games entirely developed in Java.",
+            "description": "This project has been developed as a final project for the bachelor's degree. Lorenzo il Magnifico is a multiplayer online game entirely developed in Java.",
             "icons": ["eclipseide", "java"]
         },
         "object tracker robot": {
             "name": "Object Tracker Robot",
             "media": "pixy",
-            "description": "This has been the final project of high school. The goal was to implement a robot able to follow a moving object, like a ball. The core of the robot is a ZedBoard Zynq-7000 FPGA, which combines the power of reconfigurable hardware and a dual core Arm Cortex-A9. On the FPGA all the low-level driver to control the sensor has been written, the logic has been demanded on the CPU. The computer vision goal is affidated to the Pixy CMUCam5, an artificial vision sensor based on CCD technology.",
+            "description": "This has been my final project in high school. The goal was to implement a robot able to follow a moving object, like a ball. The core of the robot is a ZedBoard Zynq-7000 FPGA, which combines the power of reconfigurable hardware and a dual-core Arm Cortex-A9. On the FPGA all the low-level driver to control the sensor has been written, and the logic has been demanded on the CPU. The computer vision goal is committed to the Pixy CMUCam5, an artificial vision sensor based on CCD technology.",
             "icons": ["vivado", "xilinx", "cplusplus", "arm"]
         },
         "nessie 2013": {
             "name": "Nessie 2013",
             "media": "nessie",
-            "description": "Implementation of a FPGA based robot suited for the Robocup Jr competition. The robot has the goal to follow a path avoiding some obstacles, find a victim and place it in the safe zone. Thus, it can interact with the environment thorugh a set of sensors (IR, UR, gyroscope and color) controlled by the core: The TE0300 FPGA Modules with Xilinx Spartan-3E. Onto the FPGA both driver of sensors and microblaze have been implemented. This projects lasted almost 2 years, starting from a sketch on paper choosing which the hardware to use, designing the PCB for interfacing the sensor with the main board, writing both the low-level and high-level code.",
+            "description": "Implementation of an FPGA-based robot designed for the Robocup Jr competition. The robot has the goal to follow a path, avoid some obstacles, find a victim and place it in a safe zone. It can interact with the environment through a set of sensors (IR, UR, gyroscope, and color) controlled by the core: the TE0300 FPGA Modules with Xilinx Spartan-3E. Onto the FPGA both drivers of sensors and MicroBlaze have been implemented. This project lasted almost 2 years, starting from a sketch on paper choosing which hardware to use, designing the PCB for interfacing the sensor with the main board, and writing both the low-level and high-level code.",
             "icons": ["vivado", "xilinx", "cplusplus"]
         }
     },
@@ -78,21 +78,21 @@
             "name": "Usability-based Cross-Layer Reliability Evaluation of Image Processing Applications",
             "published": "2021 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFT)",
             "abstract": "Image processing applications are today increasingly employed in safety- and mission-critical fields for perception tasks. It is therefore vital to analyse the reliability of the designed system before its deployment and, if necessary, to adopt specific hardening techniques. In this paper we propose a cross-layer reliability evaluation framework specifically meant for image processing applications accelerated onto SRAM-based FPGAs. The framework is based on two key concepts: i) an application-level error simulation based on validated error models to speedup execution times, and ii) an analysis of the usability of the output images based on the working scenario. Such usability analysis allows the designer to study whether the downstream system would be able to take correct decisions even if the image processing outputs are corrupted. We applied the proposed idea on a motion detection application and we compared the achieved accuracy and the required execution times with the ones of a circuit-level fault injector, here considered as a ground truth. This experiment highlighted an accuracy comparable with the one of the fault injection with a dramatic time saving.",
-            "link": "https://ieeexplore.ieee.org/document/9568307"
+            "url": "https://ieeexplore.ieee.org/document/9568307"
         },
         "fault tolerance in image processing applications": {
             "shortName": "Fault Tolerance in Image Processing Applications",
             "name": "Approximation-Based Fault Tolerance in Image Processing Applications",
             "published": "IEEE Transactions on Emerging Topics in Computing ( Volume: 10, Issue: 2, 01 April-June 2022)",
             "abstract": "Image processing applications exhibit an intrinsic degree of fault tolerance due to i) the redundant nature of images, and ii) the possible ability of the consumers of the application output to effectively carry out their task even when it is slightly corrupted. In this application scenario the classical Duplication with Comparison (DWC) scheme, that rejects images (and requires re-executions) when the two replicas’ outputs differ in a per-pixel comparison, may be over-conservative. In this article, we propose a novel lightweight fault tolerant scheme specifically tailored for image processing applications. The proposed scheme enhances the state-of-the-art by: i) improving the DWC scheme by replacing one of the two exact replicas with an approximated counterpart, and ii) allowing to distinguish between usable and unusable images instead of corrupted and uncorrupted ones by means of a Convolutional Neural Network-based checker. To tune the proposed scheme we introduce a specific design methodology that optimizes both execution time and fault detection capability of the hardened system. We report the results of the application of the proposed approach on two case studies; our proposal achieves an average execution time reduction larger than 30% w.r.t. the DWC with re-execution, and less than 4% misclassified unusable images.",
-            "link": "https://ieeexplore.ieee.org/document/9505312"
+            "url": "https://ieeexplore.ieee.org/document/9505312"
         },
         "error modeling for image processing filters": {
             "shortName": "Error Modeling for Image Processing Filters",
             "name": "Error Modeling for Image Processing Filters accelerated onto SRAM-based FPGAs",
             "published": "2020 IEEE 26th International Symposium on On-Line Testing and Robust System Design (IOLTS)",
             "abstract": "Image processing is today employed in a variety of application fields, including safety- and mission-critical ones. In these scenarios it is vital to carefully analyse the reliability of the designed system before deployment and, if necessary, to adopt specific hardening techniques. Two are the techniques generally employed: circuit-level fault injection and application-level functional error simulation. In this paper we present a set of functional error models specific for a number of convolution-based filters that are the basic building blocks for a wide range of image processing applications. The presented error models, derived through a number of circuit-level fault injection experiments, may be integrated into application-level functional error simulators, bridging the gap between the two strategies. The presented error models are the first step towards combining the accuracy of fault injection and the flexibility of error simulation into a widely adopted reliability analysis tool.",
-            "link": "https://ieeexplore.ieee.org/document/9159746"
+            "url": "https://ieeexplore.ieee.org/document/9159746"
         }
     }
 }
