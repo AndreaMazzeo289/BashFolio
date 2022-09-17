@@ -292,6 +292,7 @@ function showPublicationInfo(data)
   h1.textContent = data.name;
 
   const published = document.createElement("p");
+  published.setAttribute("class", "published")
   published.innerText = data.published;
   
   const abstract = document.createElement("p");

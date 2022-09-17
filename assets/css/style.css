@@ -231,6 +231,11 @@ input:focus
     width: 34px;
     height: 34px;
 }
+.published {
+    color: var(--color-orange);
+    padding-bottom: 1rem;
+    rem;
+}
 
 /**************************************************************
     FOOTER
@@ -264,6 +269,7 @@ input:focus
         font-size: var(--font-size-small);
     }
     #bash {
+        height: 80vh;
         width: 80%;
     }
     #bash .window-header .buttons-container {
