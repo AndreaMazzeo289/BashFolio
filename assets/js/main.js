@@ -30,7 +30,7 @@ async function startBash()
 {
   createText("Welcome to BashFolio v1995.09!");
   await delay(700);
-  createText("Type <span class='lightblue-text'>\"help\"</span> to see available commands.");
+  createText("Type <span class='blue-text'>\"help\"</span> to see available commands.");
   await delay(500);
   newLine();
 }
@@ -79,7 +79,7 @@ function handleCommand(command)
 {
   if (command === "help")
   {
-    createText("Available commands listed below. Type <span class='lightblue-text'>\"cls\"</span> to clear terminal.");
+    createText("Available commands listed below. Type <span class='blue-text'>\"cls\"</span> to clear terminal.");
     printCommands();
   }
   else if (command === "projects")
@@ -98,9 +98,9 @@ function handleCommand(command)
   }
   else if (command === "social")
   {
-    createText("<a class='social-link' href='https://github.com/AndreaMazzeo289' target='_blank'><i class='fab fa-github white'></i> github.com/AndreaMazzeo289</a>")
-    createText("<a class='social-link' href='https://www.linkedin.com/in/andreamazzeo289/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/andreamazzeo289</a>")
-    createText("<a class='social-link' href='https://www.instagram.com/andremazzeo95/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/andreamazzeo95</a>")
+    createText("<a class='social-link' href='https://github.com/AndreaMazzeo289' target='_blank'><i class='fab fa-github white-text'></i> github.com/AndreaMazzeo289</a>")
+    createText("<a class='social-link' href='https://www.linkedin.com/in/andreamazzeo289/' target='_blank'><i class='fab fa-linkedin-in white-text'></i> linkedin.com/in/andreamazzeo289</a>")
+    createText("<a class='social-link' href='https://www.instagram.com/andremazzeo95/' target='_blank'><i class='fab fa-instagram white-text'></i> instagram.com/andreamazzeo95</a>")
   }
   else if (command === "resume")
   {
@@ -124,7 +124,7 @@ function handleCommand(command)
 
 function handleWrongCommand(command)
 {
-  createText(`Command not found: <span class="lightblue-text">${command}</span>`);
+  createText(`Command not found: <span class="blue-text">${command}</span>`);
 }
 
 /****************************************************************
@@ -170,19 +170,19 @@ function getLineHeading(newCommand = true, error = false)
   // >
   const i = document.createElement("i");
   let arrowStyle = "fas fa-angle-right arrow-icon ";
-  arrowStyle += error ? "darkred-text" : "lightgreen-text";
+  arrowStyle += error ? "red-text" : "green-text";
   i.setAttribute("class", arrowStyle);
   div.appendChild(i);
 
   // root
   const rootSpan = document.createElement("span");
-  rootSpan.setAttribute("class", "darkred-text");
+  rootSpan.setAttribute("class", "red-text");
   rootSpan.textContent = "root";
   div.appendChild(rootSpan);
 
   // @am289 $
   const nameSpan = document.createElement("span");
-  nameSpan.setAttribute("class", "darkyellow-text");
+  nameSpan.setAttribute("class", "orange-text");
   nameSpan.textContent = "@am289 $";
   div.appendChild(nameSpan);
 
@@ -208,7 +208,7 @@ function printListItem(text, colorClass)
   div.setAttribute("class", "list-item");
 
   const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right arrow-icon lightyellow-text");
+  i.setAttribute("class", "fas fa-angle-right arrow-icon orange-text");
   div.appendChild(i);
 
   const anchor = document.createElement("a");
@@ -306,7 +306,7 @@ function showPublicationInfo(data)
 function printCommands()
 {
   jsonData.commands.forEach(element => {
-    printListItem(element, "lightblue-text");
+    printListItem(element, "blue-text");
   });
 }
 
@@ -314,7 +314,7 @@ function printProjects()
 {
   const projects = Object.keys(jsonData.projects);
   projects.forEach(key => {
-    printListItem(jsonData.projects[key].name, "lightgreen-text");
+    printListItem(jsonData.projects[key].name, "blue-text");
   });
 }
 
@@ -322,7 +322,7 @@ function printResearch()
 {
   const papers = Object.keys(jsonData.papers);
   papers.forEach(key => {
-    printListItem(jsonData.papers[key].shortName, "lightgreen-text");
+    printListItem(jsonData.papers[key].shortName, "blue-text");
   });
 }
 

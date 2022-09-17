@@ -9,19 +9,15 @@
     --font-size-big: 2rem;
     --font-size-regular: 1.7rem;
     --font-size-small: 1.5rem;
-  
-    --light-blue: #149bda;
 
-    /*--dark-blue: #011627;*/
-    /*--dark-blue: #2E3440;*/
-    --dark-blue: #202124;
-
-    --dark-yellow: #eea406;
-    --dark-red: #f5084f;
-    --light-green: #5AD786;
-    --light-yellow: #F7FCA0;
-    --dirty-white: #CCCCCC;
-    --purple: #7508db;
+    /*--color-blue: #4285F4;*/
+    --color-gray: #202124;
+    --color-blue: #5F95EC;
+    --color-green: #5AD786;
+    --color-red: #E74F3E;
+    --color-yellow: #F7FCA0;
+    --color-white: #E5E9F0;
+    --color-orange: #DE935F;
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +33,7 @@ a {
 
 body {
     margin: 0 10px;
-    background-color: var(--dark-blue);
+    background-color: var(--color-gray);
 
     font-family: "Cascadia Mono", sans-serif;
     font-size: var(--font-size-regular);
@@ -72,23 +68,26 @@ body {
 
     margin: 3rem;
 
-    color: var(--light-yellow);   
+    color: var(--color-yellow);   
 }
 
-.lightblue-text {
-    color: var(--light-blue);
+.blue-text {
+    color: var(--color-blue);
 }
-.darkred-text {
-    color: var(--dark-red);
+.red-text {
+    color: var(--color-red);
 }
-.darkyellow-text {
-    color: var(--dark-yellow);
+.yellow-text {
+    color: var(--color-yellow);
 }
-.lightgreen-text {
-    color: var(--light-green);
+.green-text {
+    color: var(--color-green);
 }
-.lightyellow-text {
-    color: var(--light-yellow);
+.white-text {
+    color: var(--color-white);
+}
+.orange-text {
+    color: var(--color-orange);
 }
 
 /**************************************************************
@@ -122,7 +121,7 @@ body {
     text-align: center;
 }
 #bash .window-header .title h1 {
-    color: var(--dirty-white);
+    color: var(--color-white);
     font-size: var(--font-size-big);
 }
 
@@ -140,7 +139,7 @@ body {
 input{
     border:none;
     background-color: unset;
-    color: var(--light-blue);
+    color: var(--color-blue);
     width: 100%;
     font-size: var(--font-size-regular);
     padding-left: 10px;
@@ -149,9 +148,8 @@ input{
     font-family: "Cascadia Mono", sans-serif;
 }
 .input-value {
-    color: var(--light-blue);
+    color: var(--color-blue);
     padding-left: 10px;
-    /*font-size: var(--font-size-regular);*/
 }
 input:focus
 {
@@ -179,7 +177,7 @@ input:focus
 }
 .social-link {
     text-decoration: none;
-    color: var(--dirty-white);
+    color: var(--color-white);
 }
 
 /**************************************************************
@@ -194,7 +192,7 @@ input:focus
     margin: 0;
 }
 .project-container h1 {
-    color: yellow;
+    color: var(--color-green);
     font-size: var(--font-size-large);
     margin-left: 1rem;
     margin-top: 1rem;
@@ -202,13 +200,13 @@ input:focus
 }
 .project-container img {
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
     border-radius: 10px;
 }
 .project-container h2 {
     margin-top: 3rem;
     font-size: var(--font-size-big);
-    color: var(--dark-yellow);
+    color: var(--color-green);
 }
 .project-container .icons-container {
     display: flex;
@@ -235,19 +233,19 @@ input:focus
     position:absolute;
     bottom:0;
     right:0;
-    color: var(--dark-yellow);
+    color: var(--color-yellow);
     text-align: center;
     margin-right: 3rem;
 }
 
 #heart {
-    color: var(--dark-red);
+    color: var(--color-red);
 }
 
 .credits {
     font-weight: 300;
     text-align: center;
-    color: var(--light-green);
+    color: var(--color-green);
     text-decoration: none;
 }
 
@@ -274,7 +272,10 @@ input:focus
         font-size: var(--font-size-small);
     }
     .project-container img {
-        width: 60%;
+        width: 90%;
+    }
+    .footer {
+        display: none;
     }
 }
 @media (max-width:500px)
