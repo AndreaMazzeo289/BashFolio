@@ -94,7 +94,7 @@ function handleCommand(command)
   }
   else if (command === "about me")
   {
-    createText("In ipsum dolore do voluptate duis magna excepteur occaecat. Est adipisicing aliqua proident eu ut ex incididunt. Cillum enim consectetur sit deserunt Lorem reprehenderit tempor eiusmod laborum nostrud deserunt pariatur irure. Aute sunt reprehenderit occaecat aute incididunt. Minim consequat dolore veniam magna ad in magna est dolor ad do.");
+    createText(jsonData.aboutMe);
   }
   else if (command === "social")
   {

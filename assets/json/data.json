@@ -4,7 +4,6 @@
         "projects",
         "publications",
         "social",
-        "about me",
         "resume",
         "cls"
     ],
@@ -94,5 +93,6 @@
             "abstract": "Image processing is today employed in a variety of application fields, including safety- and mission-critical ones. In these scenarios it is vital to carefully analyse the reliability of the designed system before deployment and, if necessary, to adopt specific hardening techniques. Two are the techniques generally employed: circuit-level fault injection and application-level functional error simulation. In this paper we present a set of functional error models specific for a number of convolution-based filters that are the basic building blocks for a wide range of image processing applications. The presented error models, derived through a number of circuit-level fault injection experiments, may be integrated into application-level functional error simulators, bridging the gap between the two strategies. The presented error models are the first step towards combining the accuracy of fault injection and the flexibility of error simulation into a widely adopted reliability analysis tool.",
             "url": "https://ieeexplore.ieee.org/document/9159746"
         }
-    }
+    },
+    "aboutMe": "Hi I'm Andrea! ..."
 }
