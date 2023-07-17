@@ -12,61 +12,61 @@
         "error modelling by generative adversarial network": {
             "name": "Error modelling by Generative Adversarial Network",
             "media": "gan",
-            "description": "This project was one of my Ph.D. projects. Its goal is to create a model that can automatically generate faulted images such as they are got by a fault injection campaign. I started to build my own model from the Pix2Pix GAN (taken from \"Image-to-Image Translation with GAN\"). During the early stages of training, it was evident that the model chosen with the dataset considered suffered from a vanishing gradient. Therefore, the model was transformed into a Wasserstein-GAN, making the training more effective and the generated images more accurate.",
+            "description": "This project was one of my Ph.D. projects. Its goal was to create a model that could automatically generate faulty images as if they were obtained from a fault injection campaign. I started building my own model based on the Pix2Pix GAN (taken from \"Image-to-Image Translation with GAN\"). However, during the early stages of training, it became evident that the chosen model with the considered dataset was experiencing a vanishing gradient issue. As a result, the model was transformed into a Wasserstein-GAN, which made the training more effective and the generated images more accurate.",
             "icons": ["python", "tensorflow", "pytorch"]
         },
         "fault injector for fpga": {
             "name": "Fault Injector for FPGA",
             "media": "fault",
-            "description": "Implementation of a fault injection platform on FPGA. A fault injector is intended to test an application (implemented on FPGA in this case) when it impacts hardware errors. Image processing applications, which are often used in critical environments such as satellites and autonomous driving, were chosen. The fault injector was applied on three different boards: the Zedboard, Zybo, and VC707.",
+            "description": "The implementation of a fault injection platform on an FPGA was carried out. The purpose of the fault injector was to test an application implemented on an FPGA, specifically targeting hardware errors. Image processing applications, commonly utilized in critical environments such as satellites and autonomous driving, were selected for this study. The fault injector was applied to three different FPGA boards: the Zedboard, Zybo, and VC707.",
             "icons": ["c", "vivado", "xilinx", "arm"]
         },
         "adaptive gaussian mixture model": {
             "name": "Adaptive Gaussian Mixture Model",
             "media": "gmm",
-            "description": "The project was a part of the \"computer vision and image analysis\" course attended during my master's degree. The goal is to implement a background subtraction algorithm applied to highway webcam videos. The algorithm should be able to quickly adapt to the environment, like weather and light conditions. The starting algorithm is the gaussian mixture model, upon this one another model has been built. The resulting algorithm can have an accurate background subtraction when the light conditions are stable, while during sunrise and sunset (when the light will change faster) the learning curve is higher.",
+            "description": "The project was part of the \"Computer Vision and Image Analysis\" course that I took during my master's degree. The objective was to implement a background subtraction algorithm for analyzing highway webcam videos. The algorithm needed to adapt quickly to changing environmental conditions, such as weather and lighting. Initially, the Gaussian Mixture Model was used as the base algorithm, and a further model was built upon it. The resulting algorithm achieved accurate background subtraction under stable light conditions. However, during sunrise and sunset, when the lighting changes rapidly, the algorithm had a steeper learning curve.",
             "icons": ["python", "opencv", "anaconda"]
         },
         "3d object reconstruction" : {
             "name": "3D Object Reconstruction",
             "media": "3dReconstruction",
-            "description": "The project was a part of the \"computer vision and image analysis\" course attended during my master's degree. The assignment has the role of practically testing what was studied in the theory course. From a single image representing a car taken by side, the role is to extract as much information as possible, such as the size of car components, both extrinsic and intrinsic camera parameters, and the 3D reconstruction of the hidden wheels.",
+            "description": "The project was part of the \"Computer Vision and Image Analysis\" course that I undertook during my master's degree. Its purpose was to provide a practical application for the theoretical concepts covered in the course. The task involved extracting as much information as possible from a single side-view image of a car. This included determining the size of car components, estimating both extrinsic and intrinsic camera parameters, and performing a 3D reconstruction of the hidden wheels.",
             "icons": ["opencv", "matlab"]
         },
         "4-way set associative cache controller": {
             "name": "4-Way Set Associative Cache Controller",
             "media": "cache",
-            "description": "The project was a part of the \"embedded systems\" course attended during my studies for my master's degree. The project focused on the design of a cache controller fitted for an FPGA. Since the FPGA has a lower clock frequency compared to standard CPUs, all the cache operations have been designed to be completed in the smallest possible number of clock cycles. The chosen board is the Nexys 4, which mounts an Artix-7 FPGA. The hardware definition language used to implement the cache controller is Verilog.",
+            "description": "The project was part of the \"Embedded Systems\" course I took during my master's degree studies. The project specifically revolved around designing a cache controller optimized for an FPGA. Due to the lower clock frequency of FPGAs compared to standard CPUs, all cache operations were designed to be completed within the fewest number of clock cycles possible. The chosen board for the project was the Nexys 4, which features an Artix-7 FPGA. Verilog was the hardware definition language utilized to implement the cache controller.",
             "icons": ["vivado", "xilinx"]
         },
         "igoup": {
             "name": "iGoUp",
             "media": "igoup",
-            "description": "iGoUp is an application that provides a set of tools that help you easily manage your Instagram profile. The main goal of iGoUp is to make the profile more \"live\", helping you to make interactions and increase the follower number. The application runs on a server and it's entirely implemented in python. To automatize some actions has been used the Selenium library.",
+            "description": "iGoUp is an application that offers a comprehensive set of tools to facilitate the management of your Instagram profile. The primary objective of iGoUp is to enhance the vibrancy of your profile by assisting you in making interactions and increasing your follower count. The application operates on a server and is entirely implemented in Python. The Selenium library has been utilized to automate actions.",
             "icons": ["python", "selenium", "pycharm"]
         },
         "euridit italia": {
             "name": "Euridit Italia",
             "media": "euridit",
-            "description": "This is a website developed for the Italian \"Euridit Italia\" company aiming to present their services to potential customers.",
+            "description": "This website has been developed for \"Euridit Italia\", an Italian company, with the purpose of showcasing their services to potential customers.",
             "icons": ["html5", "css3", "javascript", "php"]
         },
         "lorenzo il magnifico": {
             "name": "Lorenzo il Magnifico",
             "media": "lorenzo",
-            "description": "This project has been developed as a final project for the bachelor's degree. Lorenzo il Magnifico is a multiplayer online game entirely developed in Java.",
+            "description": "This project was developed as the final project for the bachelor's degree. \"Lorenzo il Magnifico\" is a multiplayer online game that has been entirely developed using Java.",
             "icons": ["eclipseide", "java"]
         },
         "object tracker robot": {
             "name": "Object Tracker Robot",
             "media": "pixy",
-            "description": "This has been my final project in high school. The goal was to implement a robot able to follow a moving object, like a ball. The core of the robot is a ZedBoard Zynq-7000 FPGA, which combines the power of reconfigurable hardware and a dual-core Arm Cortex-A9. On the FPGA all the low-level driver to control the sensor has been written, and the logic has been demanded on the CPU. The computer vision goal is committed to the Pixy CMUCam5, an artificial vision sensor based on CCD technology.",
+            "description": "This was my final project in high school. The objective was to implement a robot capable of tracking a moving object, such as a ball. The central component of the robot was a ZedBoard Zynq-7000 FPGA, which combines the capabilities of reconfigurable hardware with a dual-core Arm Cortex-A9 processor. On the FPGA, low-level drivers were written to control the sensor, while the logic was executed on the CPU. The computer vision aspect of the project relied on the Pixy CMUCam5, an artificial vision sensor based on CCD technology.",
             "icons": ["vivado", "xilinx", "cplusplus", "arm"]
         },
         "nessie 2013": {
             "name": "Nessie 2013",
             "media": "nessie",
-            "description": "Implementation of an FPGA-based robot designed for the Robocup Jr competition. The robot has the goal to follow a path, avoid some obstacles, find a victim and place it in a safe zone. It can interact with the environment through a set of sensors (IR, UR, gyroscope, and color) controlled by the core: the TE0300 FPGA Modules with Xilinx Spartan-3E. Onto the FPGA both drivers of sensors and MicroBlaze have been implemented. This project lasted almost 2 years, starting from a sketch on paper choosing which hardware to use, designing the PCB for interfacing the sensor with the main board, and writing both the low-level and high-level code.",
+            "description": "An FPGA-based robot was developed specifically for the Robocup Jr competition. The objective of the robot was to follow a designated path, avoid obstacles, locate a victim, and safely transport it to a designated zone. The robot interacted with its environment using a range of sensors including IR, UR, gyroscope, and color sensors. The core of the robot was powered by the TE0300 FPGA Modules with Xilinx Spartan-3E. The FPGA facilitated the implementation of sensor drivers and MicroBlaze for control purposes. This project spanned almost two years, involving various stages such as initial sketching, hardware selection, PCB design for sensor interfacing, and the development of both low-level and high-level code.",
             "icons": ["vivado", "xilinx", "cplusplus"]
         }
     },
