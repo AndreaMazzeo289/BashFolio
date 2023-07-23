@@ -33,7 +33,6 @@ a {
 
 body {
     margin: 0 10px;
-    background-color: var(--color-gray);
 
     font-family: "Cascadia Mono", sans-serif;
     font-size: var(--font-size-regular);
@@ -58,9 +57,7 @@ body {
     -ms-overflow-style: none;
 
     border-radius: 10px;
-    
-    /*box-shadow: 0 0 10px 7px rgba(255, 255, 255, .1);*/
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .05);
 
     padding: 1rem;
     padding-left: 2.5rem;
@@ -69,6 +66,9 @@ body {
     margin: 3rem;
 
     color: var(--color-yellow);   
+
+    background-color: var(--color-gray);
+    opacity: 0.80;
 }
 
 .blue-text {
