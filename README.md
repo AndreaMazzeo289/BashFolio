@@ -13,9 +13,9 @@ This repository serves as my interactive portfolio where you can explore all my 
 
 ## Accessing the Portfolio Terminal :rocket:
 
-You can access my Portfolio Terminal by clicking the link below:
+You can access to my portfolio by clicking the link below:
 
-[**Explore My Portfolio Terminal**](https://andreamazzeo289.github.io/BashFolio/)
+[**Explore My Portfolio**](https://andreamazzeo289.github.io/BashFolio/)
 
 ## How to Use :information_desk_person:
 
