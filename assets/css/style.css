@@ -37,6 +37,7 @@ body {
     font-family: "Cascadia Mono", sans-serif;
     font-size: var(--font-size-regular);
     letter-spacing: 1px;
+    background-color: var(--color-gray);
 
     display:flex;
     align-items: center;
@@ -57,7 +58,8 @@ body {
     -ms-overflow-style: none;
 
     border-radius: 10px;
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .05);
+    /* box-shadow: 0 0 10px 10px rgba(255, 255, 255, .05); */
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .1);
 
     padding: 1rem;
     padding-left: 2.5rem;
