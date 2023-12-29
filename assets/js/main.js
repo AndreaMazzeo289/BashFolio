@@ -30,7 +30,9 @@ async function startBash()
 {
   createText("Welcome to BashFolio v1995.09!");
   await delay(700);
-  createText("Type <span class='blue-text'>\"help\"</span> to see available commands.");
+  createText("These are the available commands:");
+  await delay(500);
+  printCommands();
   await delay(500);
   newLine();
 }

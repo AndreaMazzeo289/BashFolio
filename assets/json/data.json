@@ -1,10 +1,10 @@
 {
     "commands": [
-        "help",
         "projects",
         "publications",
-        "social",
         "resume",
+        "social",
+        "help",
         "cls"
     ],
     "projects":
