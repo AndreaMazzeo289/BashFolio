@@ -219,6 +219,7 @@ function printListItem(text, colorClass)
   anchor.addEventListener("click", function() {
     const input = document.querySelector("input");
     input.value = text;
+    handleNewCommand();
   });
   anchor.textContent = text;
   div.appendChild(anchor);
@@ -354,4 +355,4 @@ function isPublication(command)
   return papers.includes(command);
 }
 
-startBash();
+startBash();  
